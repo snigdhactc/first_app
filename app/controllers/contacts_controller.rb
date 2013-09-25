@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to contact_path, notice: 'Contact was successfully created.' }
+        format.html { redirect_to contact_path, notice: 'Thanks for contacting us! We will revert back to you soon.' }
       else
         format.html { render action: 'new' }
       end
