@@ -1,14 +1,16 @@
-FirstApp::Application.routes.draw do
-  resources :contacts
-  
+FirstApp::Application.routes.draw do  
    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'home#index'
-  
-  
+
+  get 'projects' => "home#projects"
+  get 'about' => "home#about"
+
+  get 'contact' => 'contacts#new'
+  post 'contacts' => 'contacts#create'
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
