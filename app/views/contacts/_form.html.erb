@@ -1,12 +1,12 @@
 <%= simple_form_for(@contact) do |f| %>
   <div>
-    <%= f.input :name %><br>
+    <font color="#19070B"><%= f.input :name %></font><br>
   </div>
   <div>
-    <%= f.input :email %><br>
+    <font color="#19070B"><%= f.input :email %></font><br>
   </div>
   <div>
-    <%= f.input :message, as: :text %>
+    <font color="#19070B"><%= f.input :message, as: :text %></font>
   </div>
   <%= f.submit "Submit" %>
 <% end %>
